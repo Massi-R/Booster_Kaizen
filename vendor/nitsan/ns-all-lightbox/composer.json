@@ -1,0 +1,41 @@
+{
+  "name": "nitsan/ns-all-lightbox",
+  "type": "typo3-cms-extension",
+  "description": "One of the only TYPO3 extension which provides to use most popular jQuery Lightbox/Modalbox at TYPO3 content elements. This TYPO3 extension provides to configure many jQuery plugins eg., lightbox2, fancybox2, colorbox, prettyphoto, darkbox, magnific-popup. Live-Demo: https://demo.t3planet.com/t3t-extensions/lightbox/default-lightbox/ You can download PRO version for more-features & free-support at https://t3planet.com/typo3-lightbox-extension",
+  "homepage": "https://extensions.typo3.org/extension/ns_all_lightbox/",
+  "license": "GPL-2.0+",
+  "keywords": [
+    "TYPO3 CMS",
+    "Lightbox",
+    "Fancybox",
+    "Colorbox",
+    "Prettyphoto",
+    "Darkbox",
+    "Magnific Popup",
+    "Nitsan"
+  ],
+  "support": {
+    "issues": "https://github.com/nitsan-technologies/ns_all_lightbox/issues"
+  },
+  "require": {
+    "typo3/cms-core": "^7 || ^8  || ^9 || ^10  || ^11 || ^12"
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  },
+  "replace": {
+    "typo3-ter/ns-all-lightbox": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor/",
+    "bin-dir": ".Build/bin/"
+  },
+  "extra": {
+    "typo3/cms": {
+        "cms-package-dir": "{$vendor-dir}/typo3/cms",
+        "web-dir": ".Build/public",
+        "extension-key": "ns_all_lightbox"
+    }
+  }
+}
